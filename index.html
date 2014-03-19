@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aria G25 web site">
+<meta name="author" content="Sergio Tanzilli">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<title>AriaG25 web site</title>
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/jumbotron.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<a href="https://github.com/tanzilli/AriaWebIDE">
+	<img style="z-index: 2000; position: fixed; top: 0; right: 0; border: 0;" src="images/forkme.png" alt="Fork me on GitHub">
+	</a>
+	
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Aria G25 web site</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux boards<b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li><a href="http://www.acmesystems.it/aria" target="_blank">Aria G25</a></li>
+					<li><a href="http://www.acmesystems.it/terra" target="_blank">Terra</a></li>
+				  </ul>
+				</li>
+
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web resources<b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li><a href="http://www.acmesystems.it/tutorials" target="_blank">Tutorials</a></li>
+					<li><a href="http://www.acmesystems.it/newsgroups" target="_blank">Newsgroup</a></li>
+					<li class="divider"></li>
+					<li><a href="http://www.acmesystems.it" target="_blank">Acme Systems website</a></li>
+				  </ul>
+				</li>
+				</ul>
+			</div><!--/.navbar-collapse -->
+		</div>
+	</div>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+	<div class="container">
+		<h1>Congratulations, it works !</h1>
+		<p>
+			Welcome to the <a href="http://www.acmesystems.it/aria" target="_blank">Aria G25</a> web site. These pages 
+			are served by your Linux board using the pre-installed  <a href="http://www.lighttpd.net/" target="_blank">Lighttpd</a> web server. 
+			You can modify these web contents or edit and run programming code examples directly from your web browser 
+			using the <a href="/Codiad" target="_blank">Web Based IDE <b>Codiad</b></a> without any need to install software 
+			on your PC.
+		</p>
+	</div>
+</div>
+
+<div class="container">
+	<!-- Row 1 -->
+	<div class="row">
+		<div class="col-lg-4">
+			<h2>Programming examples</h2>
+			<p>
+				<a href="/Codiad" target="_blank">
+				<img src="images/codiad.jpg" class="img-rounded"/>
+				</a>
+			</p>
+			<p>
+				Create, Edit, Save and Load your sources in 
+				C, C++, Python, Html, CSS, Javascript, PHP, etc.
+				directly from your web browser using <a href="http://codiad.com/" target="_blank">Codiad</a>.
+			</p>
+			<p>
+			Edit and compile your custom device tree to initializate and config 
+			your hardware at Linux startup.
+			</p>
+			<p>
+				<a class="btn btn-primary"  target="_blank" href="/Codiad">Codiad Web IDE &raquo;</a>
+			</p>
+			<p>
+				Use these login data:
+				<ul>
+				  <li>Username: <b>root</b></li>
+				  <li>Password: <b>ariag25</b></li>
+				</ul>
+			</p>
+		</div>
+
+		<div class="col-lg-4">
+			<h2>Linux shell</h2>
+			<p>
+				<a href="/shell/" target="_blank">
+				<img src="images/login.jpg"  class="img-rounded"/>
+				</a>
+			</p>
+
+			<p>
+				<a href="https://code.google.com/p/shellinabox/" target="_blank">Shell in a box</a>
+				provides a web interface to get access to the Linux Debian command prompt. 
+				In this way you can execute code examples or manage your system directly from your
+				web browser using just the same port 80 used for the other web applications.
+			</p>
+
+			<p>
+				<a class="btn btn-primary" href="/shell/" target="_blank">Linux command prompt &raquo;</a>
+			</p>
+
+			<p>
+				login: <b>acme</b> Password: <b>ariag25</b>
+			</p>
+			
+			<p>
+				Inside the command prompt you can obtain the root privileges by typing:
+			</p>	
+<pre>
+	$ su
+	login: <b>root</b>
+	Password: <b>ariag25</b>
+</pre>
+		</div>
+
+		<div class="col-lg-4" hidden>
+			<h2>Pinmap</h2>
+			<p>
+				<a href="/pinout" target="_blank">
+				<img src="images/pinout.jpg" class="img-rounded"/>
+				</a>
+			</p>
+			<p>	
+				Explore the board signals using the dynamic pinmap views, 
+				configure and set the GPIO lines, send and receive data over 
+				the I2C and SPI bus or the USART lines, generate PWM signals and
+				read A/D values.  		  
+			</p>
+			<p>	
+				Edit and compile your custom device tree to initializate and config 
+				your hardware at Linux startup.
+			</p>
+			<p>
+				<a class="btn btn-primary" href="/pinout" target="_blank">Dynamic pinmap &raquo;</a>
+			</p>
+		</div>
+
+	</div>
+
+<hr/>
+
+<footer>
+	<br/>
+	<p>
+		<a href="http://www.acmesystems.it" target="_blank">
+		<img src="images/logoacme.png" border="0"/>
+		</a>
+	</p>
+
+	<p>
+		2013 &copy; Acme Systems srl <a href="http://www.acmesystems.it" target="_blank">http://www.acmesystems.it</a>
+	</p>
+</footer>
+
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="jquery/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
